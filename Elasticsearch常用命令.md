@@ -3,8 +3,22 @@
 ```
 GET _cluster/health
 GET _cluster/health?level=indices
-GET _cat/indices?v&health=red
+GET _cluster/stats 
 GET _cluster/allocation/explain
+
+
+GET _cat/indices?h=docs.count,store.size
+GET _cat/indices?v&health=red
+
+//统计索引文档数
+GET _cat/count/data*?v
+
+//查看node
+GET _cat/nodes?v&h=heap.percent,diskUsedPercent,cpu,load_1m,master,name&s=name
+
+//热点线程
+GET _nodes/hot_threads/ 
+
 ```
 
 ### 清除节点上的缓存
