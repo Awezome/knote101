@@ -133,7 +133,7 @@ POST _bulk
 {"doc":{"traits":["纯色","纯色"]}}
 ```
 
-###  search
+###  Search
 ```
 GET book-v4/orders/_search
 {
