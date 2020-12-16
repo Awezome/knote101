@@ -27,5 +27,5 @@ alter table table_book drop index uniq_book_id;
 ### 增加索引
 ```
 alter table table_book add unique index uniq_book_id (`book_id`);
-
+alter table quote_list add column `id` int(11) unsigned primary KEY AUTO_INCREMENT;  
 ```
